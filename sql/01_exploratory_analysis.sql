@@ -1,8 +1,4 @@
 -- 01_exploratory_analysis.sql
--- Target Brazil E-Commerce Analysis
--- BigQuery SQL
--- Replace `Project_SQL` with your own project.dataset name if needed.
-
 -- 1.1 Data types of all columns in the customers table
 SELECT
   column_name,
