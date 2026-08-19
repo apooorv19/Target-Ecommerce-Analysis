@@ -13,8 +13,7 @@ SELECT
   MAX(order_purchase_timestamp) AS latest_order
 FROM `Project_SQL.orders`;
 
--- 1.3 Count distinct cities and states of customers who ordered
--- during the requested period.
+-- 1.3 Count distinct cities and states of customers who ordered during the requested period.
 SELECT
   COUNT(DISTINCT c.customer_city) AS unique_cities,
   COUNT(DISTINCT c.customer_state) AS unique_states
@@ -24,7 +23,7 @@ JOIN `Project_SQL.customers` AS c
 WHERE DATE(o.order_purchase_timestamp)
       BETWEEN '2017-12-25' AND '2018-05-25';
 
--- Optional detail view: list the cities and states instead of counts.
+-- List the cities and states instead of counts.
 SELECT DISTINCT
   c.customer_city,
   c.customer_state
