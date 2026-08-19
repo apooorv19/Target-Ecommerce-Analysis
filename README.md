@@ -2,7 +2,7 @@
 
 SQL-based analysis of the Brazilian e-commerce dataset to answer business questions related to orders, customers, sales, freight, delivery performance, and payments.
 
-> **Case study basis:** The uploaded Target problem statement asks for exploratory analysis, order trends, geography, economic impact, delivery performance, payment behavior, and actionable recommendations. The full problem statement is preserved in `docs/Target_Problem_Statement.pdf`.
+> **Case study basis:** The supplied Target problem statement asks for exploratory analysis, order trends, geography, economic impact, delivery performance, payment behavior, and actionable recommendations. A readable version is preserved in `docs/Target_Problem_Statement.md`.
 
 ## Project objective
 
@@ -25,7 +25,7 @@ The schema covers:
 
 ### Schema
 
-![Olist schema](schema/schema.png)
+![Olist schema](schema/schema.svg)
 
 The schema diagram shows the main relationships:
 
@@ -51,10 +51,10 @@ Target-Ecommerce-Analysis/
 │   └── README.md
 │
 ├── docs/
-│   └── Target_Problem_Statement.pdf
+│   └── Target_Problem_Statement.md
 │
 ├── schema/
-│   └── schema.png
+│   └── schema.svg
 │
 ├── sql/
 │   ├── 01_exploratory_analysis.sql
@@ -65,13 +65,7 @@ Target-Ecommerce-Analysis/
 │   └── 06_payment_analysis.sql
 │
 └── results/
-    ├── README.md
-    ├── 01_exploratory_analysis/
-    ├── 02_order_analysis/
-    ├── 03_geographical_analysis/
-    ├── 04_economic_analysis/
-    ├── 05_delivery_analysis/
-    └── 06_payment_analysis/
+    └── README.md
 ```
 
 ## SQL analysis
@@ -224,11 +218,11 @@ The case study asks questions around:
 
 ## Important note on the queries
 
-The uploaded problem statement specifically asks for **counts** of cities and states during the given period. The repository's exploratory SQL therefore includes a count query as the primary answer and keeps the detailed city/state query as an optional view.
+The supplied problem statement asks for **counts** of cities and states during the given period. The repository's exploratory SQL therefore includes a count query as the primary answer and keeps the detailed city/state query as an optional view.
 
 ## Source material
 
-The problem statement and schema supplied for this project are stored in:
+The supplied problem statement and schema are represented in the repository as:
 
-- `docs/Target_Problem_Statement.pdf`
-- `schema/schema.png`
+- `docs/Target_Problem_Statement.md`
+- `schema/schema.svg`
