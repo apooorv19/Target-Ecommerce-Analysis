@@ -1,5 +1,4 @@
 -- 03_geographical_analysis.sql
--- BigQuery SQL
 
 -- 3.1 Month-on-month orders by customer state
 SELECT
@@ -21,7 +20,7 @@ FROM `Project_SQL.customers`
 GROUP BY customer_state
 ORDER BY unique_customer_count DESC;
 
--- Optional city + state detail
+-- city + state detail
 SELECT
   customer_city,
   customer_state,
