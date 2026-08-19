@@ -1,5 +1,4 @@
 -- 02_order_analysis.sql
--- BigQuery SQL
 
 -- 2.1 Yearly order trend
 SELECT
