@@ -119,13 +119,11 @@ A negative `diff_estimated_delivery` means the order arrived earlier than estima
 
 ## How to reproduce
 
-### Step 1 — Download the Olist dataset
+### Step 1 - Download the Olist dataset
 
 Download the eight CSV files from the original public Olist dataset source.
 
-Do **not** commit the raw CSV files to GitHub unless you have a specific reason to do so. The repository `.gitignore` excludes them by default.
-
-### Step 2 — Create a BigQuery dataset
+### Step 2 - Create a BigQuery dataset
 
 Create a dataset, for example:
 
@@ -146,9 +144,7 @@ sellers
 geolocation
 ```
 
-If you keep the original Olist table name `order_payments`, either rename it to `payments` or change the SQL references accordingly.
-
-### Step 3 — Run the SQL scripts
+### Step 3 - Run the SQL scripts
 
 Run the scripts in this order:
 
@@ -159,7 +155,7 @@ Run the scripts in this order:
 5. `sql/05_delivery_analysis.sql`
 6. `sql/06_payment_analysis.sql`
 
-### Step 4 — Export the results
+### Step 4 - Export the results
 
 Export the query results and place them in the corresponding `results/` directory.
 
@@ -173,14 +169,7 @@ results/
     ├── lowest_freight_states.csv
     └── delivery_vs_estimate.csv
 ```
-
-### Step 5 — Add interpretation
-
-Do not stop at the SQL output. For each question, document:
-
-**Finding → Interpretation → Business implication → Recommendation**
-
-Recommendations should be directly supported by the query results.
+---
 
 ## Business questions
 
@@ -216,13 +205,10 @@ The case study asks questions around:
 - Business interpretation
 - Data-driven recommendations
 
-## Important note on the queries
-
-The supplied problem statement asks for **counts** of cities and states during the given period. The repository's exploratory SQL therefore includes a count query as the primary answer and keeps the detailed city/state query as an optional view.
-
 ## Source material
 
 The supplied problem statement and schema are represented in the repository as:
 
+- `Target - Problem Statement.pdf`
 - `docs/Target_Problem_Statement.md`
 - `schema/schema.svg`
