@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="760" viewBox="0 0 1500 760">
+<rect width="1500" height="760" fill="#f3f7fa"/>
+<defs><style>.t{font:20px Arial,sans-serif;fill:#263746}.s{font:18px Arial,sans-serif;fill:#34495e}.line{stroke:#718294;stroke-width:5;fill:none}.db{stroke:#fff;stroke-width:3}</style></defs>
+<!-- relationships -->
+<g class="line" marker-end="url(#a)" marker-start="url(#a)">
+<path d="M235 300H530"/><path d="M670 300H940"/><path d="M1090 300H1330"/>
+<path d="M605 120V235"/><path d="M990 120V235"/>
+<path d="M605 420V610"/><path d="M1400 420V610"/><path d="M750 660H1320"/>
+</g>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#718294"/></marker></defs>
+<!-- labels -->
+<text x="375" y="286" class="s">order_id</text><text x="770" y="286" class="s">order_id</text><text x="1150" y="286" class="s">seller_id</text>
+<text x="560" y="160" class="s">order_id</text><text x="930" y="160" class="s">product_id</text>
+<text x="530" y="520" class="s">customer_id</text><text x="1290" y="520" class="s">zip_code_prefix</text><text x="970" y="645" class="s">zip_code_prefix</text>
+<!-- database cylinders -->
+<g class="db">
+<g transform="translate(110,245)"><ellipse cx="70" cy="15" rx="70" ry="15" fill="#b92dcc"/><rect x="0" y="15" width="140" height="70" fill="#b92dcc"/><ellipse cx="70" cy="85" rx="70" ry="15" fill="#b92dcc"/><ellipse cx="70" cy="15" rx="70" ry="15" fill="#c53ad5"/></g>
+<g transform="translate(535,245)"><ellipse cx="70" cy="15" rx="70" ry="15" fill="#d9475b"/><rect x="0" y="15" width="140" height="70" fill="#d9475b"/><ellipse cx="70" cy="85" rx="70" ry="15" fill="#d9475b"/></g>
+<g transform="translate(920,245)"><ellipse cx="70" cy="15" rx="70" ry="15" fill="#ed7d2d"/><rect x="0" y="15" width="140" height="70" fill="#ed7d2d"/><ellipse cx="70" cy="85" rx="70" ry="15" fill="#ed7d2d"/></g>
+<g transform="translate(1330,245)"><ellipse cx="70" cy="15" rx="70" ry="15" fill="#18a99f"/><rect x="0" y="15" width="140" height="70" fill="#18a99f"/><ellipse cx="70" cy="85" rx="70" ry="15" fill="#18a99f"/></g>
+<g transform="translate(535,605)"><ellipse cx="70" cy="15" rx="70" ry="15" fill="#18a99f"/><rect x="0" y="15" width="140" height="70" fill="#18a99f"/><ellipse cx="70" cy="85" rx="70" ry="15" fill="#18a99f"/></g>
+<g transform="translate(1330,605)"><ellipse cx="70" cy="15" rx="70" ry="15" fill="#2e86c9"/><rect x="0" y="15" width="140" height="70" fill="#2e86c9"/><ellipse cx="70" cy="85" rx="70" ry="15" fill="#2e86c9"/></g>
+</g>
+<!-- titles -->
+<text x="25" y="380" class="t">olist_order_reviews_dataset</text>
+<text x="485" y="380" class="t">olist_orders_dataset</text>
+<text x="850" y="380" class="t">olist_order_items_dataset</text>
+<text x="1260" y="380" class="t">olist_sellers_dataset</text>
+<text x="455" y="755" class="t">olist_order_customer_dataset</text>
+<text x="1260" y="755" class="t">olist_geolocation_dataset</text>
+<text x="445" y="25" class="t">olist_order_payments_dataset</text>
+<text x="875" y="25" class="t">olist_products_dataset</text>
+</svg>
