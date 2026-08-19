@@ -20,8 +20,6 @@ The raw CSV files are **not stored in this GitHub repository** because the compl
 
 **[🔗 Open the Olist dataset page on Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)**
 
-The dataset is provided by Olist and is available through Kaggle. citeturn0search0
-
 ### Dataset files
 
 The download contains the Olist CSV files, including:
@@ -56,17 +54,6 @@ For this project, load the relevant CSV files into a BigQuery dataset such as `P
 `product_category_name_translation.csv` is optional for the SQL questions in this project.
 
 ## Schema
-
-The schema covers:
-
-- Customers
-- Orders
-- Order items
-- Payments
-- Products
-- Sellers
-- Reviews
-- Geolocation
 
 ![Olist schema](schema/schema.svg)
 
@@ -107,8 +94,8 @@ Target-Ecommerce-Analysis/
 │   ├── 05_delivery_analysis.sql
 │   └── 06_payment_analysis.sql
 │
-└── results/
-    └── README.md
+└── insights/
+    └── insights.md
 ```
 
 ## SQL analysis
@@ -153,12 +140,23 @@ Time buckets from the case study:
 - Top/bottom five states by average delivery time.
 - Five states where delivery is furthest ahead of the estimated date.
 
-A negative `diff_estimated_delivery` means the order arrived earlier than estimated.
-
 ### 6. Payment analysis
 
 - Month-on-month order volume by payment type.
 - Number of orders by payment installment count.
+
+## Insights & business recommendations
+
+The consolidated analysis and business recommendations are available in [`insights/insights.md`](insights/insights.md).
+
+The insights cover:
+
+- Exploratory and temporal trends
+- Order volume and purchasing behavior
+- Geographic evolution and customer distribution
+- Economic and monetary analysis
+- Freight and delivery performance
+- Payment methods and installment behavior
 
 ## How to reproduce
 
@@ -202,28 +200,9 @@ Run the scripts in this order:
 5. `sql/05_delivery_analysis.sql`
 6. `sql/06_payment_analysis.sql`
 
-### Step 5 — Export the results
+### Step 5 — Review the insights
 
-Export the query results and place them in the corresponding `results/` directory.
-
-Example:
-
-```text
-results/
-└── 05_delivery_analysis/
-    ├── delivery_time.csv
-    ├── highest_freight_states.csv
-    ├── lowest_freight_states.csv
-    └── delivery_vs_estimate.csv
-```
-
-### Step 6 — Add interpretation
-
-Do not stop at the SQL output. For each question, document:
-
-**Finding → Interpretation → Business implication → Recommendation**
-
-Recommendations should be directly supported by the query results.
+After running the queries, review `insights/insights.md` for the consolidated findings, interpretations, and recommendations.
 
 ## Business questions
 
