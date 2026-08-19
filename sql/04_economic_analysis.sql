@@ -1,5 +1,4 @@
 -- 04_economic_analysis.sql
--- BigQuery SQL
 
 -- 4.1 Percentage increase in order cost from Jan-Aug 2017 to Jan-Aug 2018.
 -- payment_value is used as the order cost.
